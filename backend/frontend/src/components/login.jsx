@@ -53,12 +53,12 @@ const Login = () => {
                     <div className="space-y-4">
                         <label className="flex items-center gap-2">
                             <IoMdMail className="absolute ml-3 text-lg" />
-                            <input {...register("email", { required: true })} type="email" className="grow border px-9 py-3 rounded-lg" placeholder="Email" />
+                            <input {...register("email", { required: true })} type="email" className="w-full border px-9 py-3 rounded-lg" placeholder="Email" />
                         </label>
                         {errors.email && <span className="text-red-500 text-[12px] font-semibold">*Email is required</span>}
                         <label className="flex items-center gap-2">
                             <FaKey className="absolute ml-3 text-sm" />
-                            <input {...register("password", { required: true })} type="password" className="grow border px-9 py-3 rounded-lg" placeholder="Password" />
+                            <input {...register("password", { required: true })} type="password" className="w-full border px-9 py-3 rounded-lg" placeholder="Password" />
                         </label>
                         {errors.password && <span className="text-red-500 text-[12px] font-semibold">*Password is required</span>}
                     </div>
