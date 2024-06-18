@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3001,
     proxy: {
       "/api": {
-        target: "http://localhost:5001",
+        target: "https://a-chat-amith.onrender.com",
         changeOrigin: true,
       }
     }
